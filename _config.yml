@@ -8,23 +8,23 @@ paginate: 12
 baseurl: 
 email: 'weblbdesigns@gmail.com'
 google_analytics: ''
-disqus: 'demowebsite'
+disqus: ''
 sharethis: '<script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5a6b2fe4fb197a0011c589f6&product=sticky-share-buttons"></script>'
 
 # Authors
 authors:
-  sal:
+  deb:
     name: Deb
     display_name: Deb
-    gravatar: e56154546cf4be74e393c62d1ae9f9d4
+    gravatar: 
     email: dbarker@bcsquared.com
     web: 
     twitter: 
     description: "Author of Plover stomp, a blog dedicated to the snowy plover "
-  john:
+  jeff:
     name: Jeff
     display_name: Jeff
-    gravatar: b1cc14991db7a456fcd761680bbc8f81
+    gravatar: 
     email: jbarker@bcsquared.com
     web: 
     twitter: 
