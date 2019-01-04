@@ -1,0 +1,48 @@
+# Site
+name: Plover Stomp  
+description: Public access for all
+meta_description: "A blog all about the snowy plover, public access, and humor"
+logo: 'assets/images/logo.gif'
+favicon: 'assets/images/favicon.ico'
+paginate: 12
+baseurl: 
+email: 'weblbdesigns@gmail.com'
+google_analytics: ''
+disqus: 'demowebsite'
+sharethis: '<script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5a6b2fe4fb197a0011c589f6&product=sticky-share-buttons"></script>'
+
+# Authors
+authors:
+  sal:
+    name: Deb
+    display_name: Deb
+    gravatar: e56154546cf4be74e393c62d1ae9f9d4
+    email: dbarker@bcsquared.com
+    web: 
+    twitter: 
+    description: "Author of Plover stomp, a blog dedicated to the snowy plover "
+  john:
+    name: Jeff
+    display_name: Jeff
+    gravatar: b1cc14991db7a456fcd761680bbc8f81
+    email: jbarker@bcsquared.com
+    web: 
+    twitter: 
+    description: 
+
+# Plugins
+plugins: 
+  - jekyll-paginate
+  - jekyll-archives
+    
+# Archives
+jekyll-archives:
+  enabled:
+    - categories
+  layout: archive
+  permalinks:
+    category: '/category/:name/'
+    
+# Other
+markdown: kramdown
+highlighter: rouge

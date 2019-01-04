@@ -1,0 +1,102 @@
+---
+layout: default
+title: Home
+---
+
+</div>
+</div>
+<!-- We've temporary closed main-content and container to have a full width intro -->    
+
+
+<!-- Home Jumbotron
+================================================== -->    
+<section class="intro">
+    <div class="wrapintro">
+        <h1>It's called nautral selection</h1>
+        <h2 class="lead">"Affiliates" is a Jekyll theme designed & developed by WowThemesNet, best suitable for affiliate marketing.</h2> 
+
+        <p>The sign at you favorite beach reads “Public Property, No Trespassing, Your Tax Dollars at Work” saving the snowy plover. What is the snowy plover and why is beach public access being denied or restricted?plover This is a good question, since the plover has always been a common bird in the United States. Why is it protected; it was federally listed as threatened under the Endangered Species Act of 1973.. The United States Fish and Wildlife Service decided that the snowy plovers that nest along the west coast of the United States are separate population from those that nest at inland sites. Instantly, the coastal populations of the snowy plover were reduced so that they could meet the criteria for listing it as a “threatened species” a under the Endangered Species Act. Loss of public beach followed. Snowy plovers were not hunted into near-extension, poisoned by pesticides, eaten by dogs, stomped on by horses, scared to death by people flying kites or run over by joggers. A human decision created the alleged decline of the snowy plover. Human, conservation managers in particular have failed to recognize that ” There is no balance in nature there are only relative rates of change.” It is impossible to try to maintain the balance of nature that existed in the past.</p>
+
+       <p>Welcome to PloverStomp.com and a realistic perspective on beach access and conservation.</p>
+    </div>
+</section>
+
+<!-- We reopen main-content and container --> 
+
+<div class="container">
+    
+    <div class="main-content">
+        
+
+        <!-- Featured
+        ================================================== -->
+        <section class="featured-posts">
+
+            <div class="section-title">
+                <h2><span>Featured</span></h2>
+            </div>
+
+            <div class="row listfeaturedtag">
+
+            {% for post in site.posts %}
+
+                {% if post.featured == true %}
+
+                    {% include featuredbox.html %}
+
+                {% endif %}
+
+            {% endfor %}
+
+            </div>
+
+        </section>
+
+        <!-- Posts Index
+        ================================================== -->
+         {% if paginator.previous_page %}
+                {% if paginator.previous_page > 0 %}
+                 <div id="jumptopageof"></div>
+        {% endif %}
+        {% endif %}    
+
+        <section class="recent-posts row">
+
+            <div class="col-sm-4">
+                {% include sidebar.html %}
+            </div>
+
+            <div class="col-sm-8">
+
+                <div class="section-title">
+                    <h2><span>All Stories</span></h2>    
+                </div>
+
+                <div class="masonrygrid row listrecent">
+
+                    {% for post in paginator.posts %}
+
+                    {% unless post.featured == true %}
+
+                        {% include postbox.html %}
+
+                    {% endunless %}
+
+                    {% endfor %}
+
+                </div> 
+
+                <!-- Pagination -->
+                <div class="bottompagination">
+
+                    <span class="navigation" role="navigation">
+
+                        {% include pagination.html %}
+
+                    </span>
+
+                </div>
+
+            </div>
+
+        </section>
